@@ -15,7 +15,6 @@ int main() {
         std::cout << "--- Aluno " << (i + 1) << " ---" << std::endl;
 
         std::cout << "Nome: ";
-        std::cin.ignore();
         std::getline(std::cin, alunos[i].nome);
 
         std::cout << "Matricula: ";
@@ -23,6 +22,7 @@ int main() {
 
         std::cout << "Nota: ";
         std::cin >> alunos[i].nota;
+        std::cin.ignore();
     }
 
     int indiceMaiorNota = 0;
