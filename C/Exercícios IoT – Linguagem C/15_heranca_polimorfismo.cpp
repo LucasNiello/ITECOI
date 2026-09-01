@@ -1,3 +1,10 @@
+// Este arquivo permanece em C++ (.cpp) porque usa HERANÇA
+// (class Carro : public Veiculo) e POLIMORFISMO (funções virtuais
+// com "virtual" e "override"). Esses recursos são exclusivos de
+// linguagens orientadas a objetos como o C++; a linguagem C não tem
+// classes, então não é possível representar herança nem polimorfismo
+// da mesma forma (simulá-los em C exigiria ponteiros de função e
+// perderia a clareza didática do exercício).
 #include <iostream>
 
 class Veiculo {

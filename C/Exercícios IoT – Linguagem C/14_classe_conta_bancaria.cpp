@@ -1,3 +1,9 @@
+// Este arquivo permanece em C++ (.cpp) porque usa CLASSE (class
+// ContaBancaria), um recurso de Programação Orientada a Objetos que
+// não existe na linguagem C. Em C só temos struct, que agrupa dados
+// mas não permite métodos (funções dentro do tipo), encapsulamento
+// (private/public) nem construtor. Sem esses recursos, o exercício
+// perderia o sentido de ensinar classes.
 #include <iostream>
 #include <string>
 

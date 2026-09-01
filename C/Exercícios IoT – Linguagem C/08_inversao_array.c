@@ -1,13 +1,13 @@
-#include <iostream>
+#include <stdio.h>
 
 int main() {
     const int TAM = 5;
     int array[TAM];
 
-    std::cout << "Digite " << TAM << " elementos inteiros:" << std::endl;
+    printf("Digite %d elementos inteiros:\n", TAM);
     for (int i = 0; i < TAM; i++) {
-        std::cout << "Elemento " << (i + 1) << ": ";
-        std::cin >> array[i];
+        printf("Elemento %d: ", i + 1);
+        scanf("%d", &array[i]);
     }
 
     int inicio = 0, fim = TAM - 1;
@@ -19,11 +19,11 @@ int main() {
         fim--;
     }
 
-    std::cout << "Array invertido: ";
+    printf("Array invertido: ");
     for (int i = 0; i < TAM; i++) {
-        std::cout << array[i] << " ";
+        printf("%d ", array[i]);
     }
-    std::cout << std::endl;
+    printf("\n");
 
     return 0;
 }
